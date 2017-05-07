@@ -90,6 +90,7 @@ main(int  argc,				/* I - Number of command-line args */
   */
 
   tree = mxmlNewElement(MXML_NO_PARENT, "element");
+  printf("bzh test\n");
 
   if (!tree)
   {
