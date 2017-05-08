@@ -149,7 +149,7 @@ main(int  argc,				/* I - Number of command-line args */
     return (1);
   }
 
-  if (node->value.integer != 123)
+  if (node->value.integer != 456)/* Modified by baozhaohui 2017.05.08 123->456 */
   {
     fprintf(stderr, "ERROR: First child value is %d, expected 123.\n",
             node->value.integer);
@@ -175,7 +175,7 @@ main(int  argc,				/* I - Number of command-line args */
     return (1);
   }
 
-  if (!node->value.opaque || strcmp(node->value.opaque, "opaque"))
+  if (!node->value.opaque || strcmp(node->value.opaque, "baozhaohui"))/* Modified by baozhaohui 2017.05.08 opaque->baozhaohui */
   {
     fprintf(stderr, "ERROR: Second child value is \"%s\", expected \"opaque\".\n",
             node->value.opaque ? node->value.opaque : "(null)");
@@ -201,7 +201,7 @@ main(int  argc,				/* I - Number of command-line args */
     return (1);
   }
 
-  if (node->value.real != 123.4f)
+  if (node->value.real != 111.1f)/* Modified by baozhaohui 2017.05.08 123.4f->111.1f */
   {
     fprintf(stderr, "ERROR: Third child value is %f, expected 123.4.\n",
             node->value.real);
@@ -228,7 +228,7 @@ main(int  argc,				/* I - Number of command-line args */
   }
 
   if (!node->value.text.whitespace ||
-      !node->value.text.string || strcmp(node->value.text.string, "text"))
+      !node->value.text.string || strcmp(node->value.text.string, "nihao"))/* Modified by baozhaohui 2017.05.08 text->nihao */
   {
     fprintf(stderr, "ERROR: Fourth child value is %d,\"%s\", expected 1,\"text\".\n",
             node->value.text.whitespace,
