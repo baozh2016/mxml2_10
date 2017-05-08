@@ -115,10 +115,10 @@ main(int  argc,				/* I - Number of command-line args */
     return (1);
   }
 
-  mxmlNewInteger(tree, 123);
-  mxmlNewOpaque(tree, "opaque");
-  mxmlNewReal(tree, 123.4f);
-  mxmlNewText(tree, 1, "text");
+  mxmlNewInteger(tree, 456);/* Modified by baozhaohui 2017.05.08 123->456 */
+  mxmlNewOpaque(tree, "baozhaohui");/* Modified by baozhaohui 2017.05.08 opaque->baozhaohui */
+  mxmlNewReal(tree, 111.1f);/* Modified by baozhaohui 2017.05.08 123.4f->111.1f */
+  mxmlNewText(tree, 1, "nihao");/* Modified by baozhaohui 2017.05.08 text->nihao */
 
   mxmlLoadString(tree, "<group type='string'>string string string</group>",
                  MXML_NO_CALLBACK);
